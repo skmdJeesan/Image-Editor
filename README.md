@@ -12,9 +12,10 @@ A lightweight, browser-based image editing tool that allows you to upload images
 - **Responsive Design**: Works seamlessly on desktop and mobile devices
 - **Lightweight**: No external dependencies—pure HTML, CSS, and vanilla JavaScript
 
-## 🚀 Live Demo
+## 🚀 preview links
 
-[View Live Demo](#)
+- [View Live Demo](https://skmdjeesan.github.io/Image-Editor/)
+- [Source Code](https://github.com/skmdJeesan/Image-Editor/)
 
 ## 📦 Tech Stack
 
