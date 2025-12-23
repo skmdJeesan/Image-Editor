@@ -1,0 +1,132 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,body { width: 100%; height: 100%;}
+main { 
+  width: 100%; min-height: 100%;
+  background-color: var(--bg-primary-color);
+  color: var(--text-secondary-color);
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding-xl);
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-sm) 0;
+  color: var(--text-secondary-color);
+  font-weight: 200;
+}
+
+section .left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gutter-lg);
+}
+
+section .left .top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gutter-xl);
+  border-radius: var(--radius-md);
+  color: var(--text-primary-color);
+}
+
+.btn {
+  padding: var(--padding-sm) var(--padding-md);
+  background-color: var(--bg-active-color);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  scale: 95%;
+  border: none;
+}
+
+section .left .bottom {
+  background-color: var(--bg-secondary-color);
+  aspect-ratio: 4/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-md);
+  border-radius: var(--radius-md);
+}
+
+.bottom .placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.6;
+}
+
+.placeholder i { font-size: var(--padding-2xl);}
+
+section .right {
+  width: 35%;
+  border-radius: var(--radius-lg);
+  background-color: var(--bg-secondary-color);
+  padding: var(--padding-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gutter-sm);
+}
+
+section .right .filters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+section .right .filter {
+  width: 100%;
+}
+
+section .right .filter input {
+  width: 100%;
+  outline: none;
+  margin-top: 0.1rem;
+  appearance: none;
+}
+
+section .right .filter input::-webkit-slider-thumb {
+  cursor: pointer;
+  appearance: none;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background-color: var(--bg-active-color);
+  margin-top: -8.5px;
+}
+
+section .right .filter input::-webkit-slider-runnable-track {
+  height: 1.5px;
+  background-color: var(--bg-active-color);
+}
+
+canvas {
+  display: none;
+  max-width: 90%;
+  max-height: 60%;
+  border-radius: var(--radius-md);
+}
+
+.presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+}
+
+.selected { background-color: #fff;}
+
